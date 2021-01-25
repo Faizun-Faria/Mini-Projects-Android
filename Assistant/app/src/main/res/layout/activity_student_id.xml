@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentIdActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/studentIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_id" />
+
+        <EditText
+            android:id="@+id/studentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/studentIdText"
+            android:layout_toRightOf="@id/studentIdText" />
+
+        <Button
+
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studentId"
+            android:text="Save"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_right"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
